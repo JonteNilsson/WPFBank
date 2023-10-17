@@ -121,7 +121,10 @@
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy" VerticalAlignment="Top" Click="btnAdminlogin_Click"   
+                    FontFamily="Franklin Gothic Heavy"
+                    VerticalAlignment="Top" 
+                    Click="btnAdminlogin_Click"  
+                    Visibility="Hidden"
                     />
                 <Button
                     Name="btnRegisterUser"

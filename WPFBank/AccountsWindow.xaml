@@ -113,7 +113,9 @@
                     Grid.Row="7"
                     Grid.Column="1"
                     Width="100"
-                    Height="20">
+                    Height="20"
+                    IsReadOnly="True"
+                    >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="5"/>
@@ -125,7 +127,9 @@
                     Grid.Row="7"
                     Grid.Column="3"
                     Width="100"
-                    Height="20">
+                    Height="20"
+                    IsReadOnly="True"
+                    >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="5"/>
@@ -169,7 +173,7 @@
                     Foreground="White"
                     FontFamily="Franklin Gothic Heavy"
                     BorderThickness="3"
-                    Margin="4"
+                    Margin="4" Click="btnTransfer_Click"
                     >
                     <Button.Resources>
                         <Style TargetType="Border">
@@ -197,7 +201,9 @@
                     Grid.ColumnSpan="3"
                     VerticalAlignment="Bottom"
                     Width="110"
-                    Height="20">
+                    Height="20"
+                    IsReadOnly="True"                   
+                    >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="5"/>

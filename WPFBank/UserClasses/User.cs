@@ -1,15 +1,14 @@
-﻿namespace WPFBank.Classes
+﻿namespace WPFBank.UserClasses
 {
     public abstract class User
     {
-        protected User(string username, string password)
+        public User(string username, string password)
         {
-            Username = username;
-            Password = password;
+            _Username = username;
+            _Password = password;
         }
 
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string _Username { get; set; }
+        public string _Password { get; set; }
     }
-
 }

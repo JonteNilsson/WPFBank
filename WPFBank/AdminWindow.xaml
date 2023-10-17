@@ -68,7 +68,7 @@
                     TextDecorations="Underline"
                        />
                 <ListView 
-                    Name="östAccountInfo" 
+                    Name="lstAccountInfo" 
                     Margin="0 0 0 10"
                     Grid.Row="3" 
                     Grid.RowSpan="2" 
@@ -76,8 +76,9 @@
                     Grid.ColumnSpan="2">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Width="225" Header="Account name" DisplayMemberBinding="{Binding Account+name}"/>
-                            <GridViewColumn Width="105" Header="Balance" DisplayMemberBinding="{Binding Balance}"/>
+                            <GridViewColumn Width="150" Header="Account name" DisplayMemberBinding="{Binding AccountName}"/>
+                            <GridViewColumn Width="70" Header="Savings" DisplayMemberBinding="{Binding Savings}"/>
+                            <GridViewColumn Width="70" Header="Salary" DisplayMemberBinding="{Binding Salary}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>

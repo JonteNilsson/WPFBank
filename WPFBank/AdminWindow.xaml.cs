@@ -1,4 +1,8 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Controls;
+using WPFBank.Classes;
+using WPFBank.UserClasses;
 
 namespace WPFBank
 {
@@ -9,7 +13,32 @@ namespace WPFBank
     {
         public AdminWindow()
         {
+
             InitializeComponent();
+            lstAccountInfo.Items.Clear();
+
+            List<Client> clients = UserManager.Clients;
+
+
+
+            foreach (Client client in clients)
+            {
+                ListViewItem item = new();
+
+                item.Content = client._ClientUsername;
+
+                item.Tag = client;
+
+                lstAccountInfo.Items.Add(new
+                {
+
+                    AccountName = client._ClientUsername,
+                    Savings = client._SavingsBalance,
+                    Salary = client._SalaryBalance
+
+                });
+            }
+
         }
 
         private void btnReturnFromAdminView_Click(object sender, RoutedEventArgs e)

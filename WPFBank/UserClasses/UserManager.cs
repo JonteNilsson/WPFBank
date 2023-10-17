@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using WPFBank.Classes;
 
 namespace WPFBank.UserClasses
 {
-    class UserManager
+    public static class UserManager
     {
+        public static List<Client> Clients { get; set; } = new();
     }
 }
