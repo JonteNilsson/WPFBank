@@ -72,9 +72,9 @@
                 <Label
                     Grid.Row="3"
                     Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Content="Enter username"
-                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Content="Select username"
+                    HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                     FontSize="17"
                     Foreground="White"
@@ -83,9 +83,9 @@
                 <Label
                     Grid.Row="5"
                     Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Content="Enter password"
-                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Content="Select password"
+                    HorizontalAlignment="Center"
                     VerticalAlignment="Bottom"
                     FontSize="17"
                     Foreground="White"
@@ -94,14 +94,14 @@
                 <TextBox
                     Name="txtRegisterUser"
                     Grid.Row="4"
-                    Grid.Column="1"
+                    Grid.Column="2"
                     Width="150"
                     Height="20"
                     />
                 <TextBox
                     Name="txtRegisterPassword"
                     Grid.Row="6"
-                    Grid.Column="1"
+                    Grid.Column="2"
                     Width="150"
                     Height="20"
                     />
@@ -109,12 +109,12 @@
                     Name="btnRegister"
                     Content="Register"
                     Grid.Column="2"
-                    Grid.Row="8"
+                    Grid.Row="7"
                     Width="75"
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" Click="btnRegister_Click"    
                     />
                 <Button
                     Name="btnReturnFromRegistration"
@@ -127,7 +127,7 @@
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" Click="btnReturnFromRegistration_Click"    
                     />
 
             </Grid>

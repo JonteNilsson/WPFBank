@@ -69,7 +69,7 @@
                 <Label
             Grid.Row="4"
             Grid.Column="1"
-            Content="Username/email"
+            Content="Username"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
             FontSize="17"
@@ -109,7 +109,7 @@
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" Click="btnLogin_Click"    
                     />
                 <Button
                     Name="btnAdminlogin"
@@ -121,7 +121,20 @@
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" VerticalAlignment="Top" Click="btnAdminlogin_Click"   
+                    />
+                <Button
+                    Name="btnRegisterUser"
+                    Content="Register"
+                    Grid.Column="1"
+                    Grid.Row="9"
+                    HorizontalAlignment="Right"
+                    Margin="0 0 5 0"
+                    Width="55"
+                    Height="25" Background="{x:Null}" 
+                    BorderBrush="{x:Null}"
+                    Foreground="White"
+                    FontFamily="Franklin Gothic Heavy" VerticalAlignment="Top" Click="btnRegisterUser_Click"
                     />
             </Grid>
     </Border>

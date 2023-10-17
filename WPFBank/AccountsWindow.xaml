@@ -73,7 +73,7 @@
                     Foreground="White"
                     FontFamily="Franklin Gothic Heavy"
                     HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Top"
                     FontSize="20"
                     />
                 <Label
@@ -85,7 +85,7 @@
                     Foreground="White"
                     FontFamily="Franklin Gothic Heavy"
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Top"
                     FontSize="20"
                     />
                 <Label
@@ -188,7 +188,31 @@
                     Height="25" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" Click="btnReturnFromRegistration_Click"    
+                    />
+                <TextBox 
+                    Name="txtAccountNumber"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3"
+                    VerticalAlignment="Bottom"
+                    Width="110"
+                    Height="20">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <Label
+                    Grid.Column="2"
+                    Grid.Row="5"
+                    Content="Account number"
+                    Foreground="White"
+                    FontFamily="Franklin Gothic Heavy"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    FontSize="12"
                     />
             </Grid>
         </Border>

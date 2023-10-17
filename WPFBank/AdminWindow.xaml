@@ -92,7 +92,7 @@
                     Height="15" Background="{x:Null}" 
                     BorderBrush="{x:Null}"
                     Foreground="White"
-                    FontFamily="Franklin Gothic Heavy"    
+                    FontFamily="Franklin Gothic Heavy" Click="btnReturnFromAdminView_Click"    
                     />
             </Grid>
         </Border>
