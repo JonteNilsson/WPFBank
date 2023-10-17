@@ -62,11 +62,6 @@ namespace WPFBank
                     MessageBox.Show("No users registered");
                 }
 
-                else
-                {
-                    MessageBox.Show("User is not found!");
-                }
-
             }
 
             else if (userName == "" || password == "")
@@ -75,6 +70,15 @@ namespace WPFBank
             }
 
 
+        }
+
+        private void AdminCheck(string userName, string password)
+        {
+            if (userName == "Admin" && password == "Admin")
+            {
+                btnAdminlogin.Visibility = Visibility.Visible;
+
+            }
         }
 
         private void btnRegisterUser_Click(object sender, RoutedEventArgs e)
